@@ -76,6 +76,8 @@ class Resnet_multichannel(nn.Module):
         for i in range(new_in_channels - m.in_channels):
             channel = m.in_channels + i
             new_m.weight[:, channel:channel+1, :, :] = m.weight[:, copy_weights:copy_weights+1, : :].clone()
+        new_m.weight = nn.Parameter(new_m.weight)
+
         return new_m
     
 def get_arch(encoder_depth, num_in_channels):
