@@ -1,5 +1,5 @@
 # Resnet-multichannel
-Contains a class to help in creating **Pretrained Resnet architectures** in PyTorch that take an *arbitary number of channels(> 3)* as input.
+Contains a class to help use **Multichannel Pretrained Resnet Models** in PyTorch that take an *arbitary number of channels(> 3)* as input.
 <br>
 The whole process is simplified in a few lines of code : <br>
 ```
