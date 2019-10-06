@@ -1,6 +1,8 @@
 # Resnet-multichannel
 Contains a class to help use **Multichannel Pretrained Resnet Models** in PyTorch that take an *arbitary number of channels(> 3)* as input.
 <br>
+*The models implemented here carry much of transfer learning's benefits even when expanded to an arbitrary number of input channels. This is implemented by sharing the weights of existing trained 3 input kernels into the new input kernels that we add to the network.*
+<br>
 The whole process is simplified in a few lines of code : <br>
 ```
 import multichannel_resnet
